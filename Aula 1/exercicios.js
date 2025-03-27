@@ -37,6 +37,73 @@ function processar2()
 
 }
 
+function ex3()
+{
+
+   valor = document.getElementById("n1").value ;
+   taxa = document.getElementById("n2").value ;
+   tempo = document.getElementById("n3").value;
+
+   let total = Number(valor) + Number(valor*(taxa**2/100)*tempo);
+
+   document.getElementById("mensagem").innerHTML = "Valores informados" + "<br>Valor " + valor + "<br>Taxa " + taxa + "<br>Tempo " + tempo;
+   document.getElementById("mensagem2").innerHTML = "O valor atualizado é " + total;
+}
+
+function ex4()
+{
+
+   base = document.getElementById("n1").value;
+   altura = document.getElementById("n2").value;
+
+   let total = Number(base) * Number(altura) /2;
+
+   document.getElementById("mensagem").innerHTML = "Base " + base + "<br>Altura " + altura;
+   document.getElementById("mensagem2").innerHTML = "A area do triangulo é " + total;
+}
+
+function ex5()
+{
+
+   lado = document.getElementById("n1").value
+
+   let area = Number(lado*lado);
+
+   document.getElementById("mensagem").innerHTML = "O lado do quadrado é " + lado;
+   document.getElementById("mensagem2").innerHTML = "A area do quadrado " + area;
+
+}
+
+function ex6()
+{
+
+   qtde = document.getElementById("n1").value;
+   preco = document.getElementById("n2").value;
+
+   let total = Number(qtde*preco);
+   let desconto = Number(total) * 0.10;
+   let final = Number(total - desconto);
+
+   document.getElementById("mensagem").innerHTML = "Subtotal R$" + total;
+   document.getElementById("mensagem2").innerHTML = "Desconto R$" + desconto;
+   document.getElementById("mensagem3").innerHTML = "Preço a pagar R$" + final;
+
+}
+
+function ex7()
+{
+
+   nota1 = Number (document.getElementById("n1").value);
+   nota2 = Number (document.getElementById("n2").value);
+   nota3 = Number (document.getElementById("n3").value)_;
+
+   let media = (nota1 + nota2 + nota3)/ 3;
+
+   document.getElementById("mensagem").innerHTML = "A media é " + media;
+
+}
+
+
 
 
 
