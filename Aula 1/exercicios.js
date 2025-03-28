@@ -95,7 +95,7 @@ function ex7()
 
    nota1 = Number (document.getElementById("n1").value);
    nota2 = Number (document.getElementById("n2").value);
-   nota3 = Number (document.getElementById("n3").value)_;
+   nota3 = Number (document.getElementById("n3").value);
 
    let media = (nota1 + nota2 + nota3)/ 3;
 
@@ -103,7 +103,41 @@ function ex7()
 
 }
 
+function ex8()
+{
 
+   altura = Number (document.getElementById("n1").value);
+   peso = Number (document.getElementById("n2").value);   
 
+   let massa = peso / (altura**2);
+
+   document.getElementById("mensagem").innerHTML = "Seu indice de massa corporal é " + massa;
+
+}
+
+function ex9()
+{
+
+   inicial = Number (document.getElementById("n1").value);
+   taxa = Number (document.getElementById("n2").value);
+   tempo = Number (document.getElementById("n3").value);  
+   
+   let montante = inicial*(1+(taxa*tempo));
+
+   document.getElementById("mensagem").innerHTML = "O valor do montante é " + montante;
+
+}
+
+function ex10()
+{
+
+   salario = Number (document.getElementById("n1").value);
+   tempo = Number (document.getElementById("n2").value);
+
+   let mensal = salario*tempo*28;
+
+   document.getElementById("mensagem").innerHTML = "O salario mensal é de R$" + mensal;
+
+}
 
 
