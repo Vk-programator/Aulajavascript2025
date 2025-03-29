@@ -140,4 +140,97 @@ function ex10()
 
 }
 
+function ex11()
+{
+
+   a = Number (document.getElementById("n1").value);
+   b = Number (document.getElementById("n2").value); 
+
+   if( a == b)
+      {
+
+      document.getElementById("mensagem").innerHTML = "os numeros são iguais";
+
+      } else
+       {
+
+         document.getElementById("mensagem").innerHTML = "os numeros são diferentes";
+
+      }
+
+}
+
+function ex12()
+{
+
+ a = Number (document.getElementById("n1").value);
+ b = Number (document.getElementById("n2").value);
+ c = Number (document.getElementById("n3").value);
+
+ let ab = a + b;
+
+ if ( ab > c)
+ {
+
+   document.getElementById("mensagem").innerHTML = "A soma dos numeros A + B é " + ab +" e é maior do que C."
+
+ } else if (ab == c)
+   {
+
+      document.getElementById("mensagem").innerHTML = "A soma dos numeros A + B é " + ab +" e é igual a C."
+
+   }
+      else
+   {
+
+      document.getElementById("mensagem").innerHTML = "A soma dos numeros A + B é " + ab +" e é menor do que C."
+
+   }
+
+}
+
+function ex13()
+{
+
+   salario = Number(document.getElementById("n1").value);
+
+   if (salario <= 500)
+   {
+
+      document.getElementById("mensagem").innerHTML = "Você tem direito ao aumento salarial";
+
+   } else
+
+      {
+
+         document.getElementById("mensagem").innerHTML = "Você não tem o direito ao aumento salarial";
+
+      }
+
+}
+
+function ex14()
+{
+
+   salario = Number(document.getElementById("n1").value);
+
+   if (salario <= 500)
+   {
+
+      let reajuste = salario * 0.30;
+      let total = salario + reajuste; 
+
+      document.getElementById("mensagem").innerHTML = "Você tem direito ao aumento salarial";
+      document.getElementById("mensagem2").innerHTML = "Foi feito um reajuste de R$" + reajuste;
+      document.getElementById("mensagem3").innerHTML = "Seu salario agora é de R$" + total;
+
+   } else
+
+      {
+
+         document.getElementById("mensagem").innerHTML = "Você não tem o direito ao aumento salarial";
+
+      }
+
+}
 
