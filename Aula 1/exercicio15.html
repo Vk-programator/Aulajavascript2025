@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="exercicios.js"></script>
+    
+    <table border="1" align="center">
+
+    <tr>
+        <th>Código:</th>
+        <th>Descrição:</th>
+        <th>Preço:</th>
+    </tr>  
+    
+    <tr>
+        <th>5</th>
+        <th>Tênis Nike</th>
+        <th>500,00</th>
+    </tr>
+
+    <tr>
+        <th>10</th>
+        <th>Tênis Adidas</th>
+        <th>300,00</th>
+    </tr>
+
+    </table>
+
+    <hr>
+
+    <form>
+        <table align="center">
+            <tr>
+            <th>Insira o codigo do produto:</th>
+            <th>
+                <input type="number" id="n1">
+            </th>
+        </tr>
+
+        <tr>
+            <th>Insira a quantidade:</th>
+            <th>
+                <input type="number" id="n2">
+            </th>
+        </tr>
+
+            <tr>
+                <th colspan="2">
+                    <input type="button" value="Processar" onclick="ex15()">
+                </th>
+                <th></th>
+            </tr>
+        </table>
+        
+        <p align="center" id="mensagem1" style="color: red;"></p>
+
+        <table align="center" border="1">
+            <tr>
+                <th>Quantidade:</th>
+                <th>Descrição:</th>
+                <th>Preço:</th>
+            </tr>
+
+            <tr>
+                <th id="qtd"></th>
+                <th id="desc"></th>
+                <th id="preco"></th>
+            </tr>
+
+        </table>
+    </form>
+
+
+    
+</body>
+</html>

@@ -111,7 +111,7 @@ function ex8()
 
    let massa = peso / (altura**2);
 
-   document.getElementById("mensagem").innerHTML = "Seu indice de massa corporal é " + massa;
+   document.getElementById("mensagem").innerHTML = "Seu indice de massa corporal é " + massa.toFixed(2);
 
 }
 
@@ -233,4 +233,43 @@ function ex14()
       }
 
 }
+
+function ex15()
+{
+
+   cod = Number(document.getElementById("n1").value);
+   qtd = Number(document.getElementById("n2").value);
+
+
+   if (cod == 5)
+   {
+      document.getElementById("mensagem1").innerHTML = "";
+      let preco = Number(500);
+      let total = preco * qtd;
+
+      document.getElementById("qtd").innerHTML = qtd;
+      document.getElementById("desc").innerHTML = "Tenis Nike";
+      document.getElementById("preco").innerHTML = total;
+
+   } else if (cod == 10)
+   {
+      document.getElementById("mensagem1").innerHTML = "";
+      let preco = Number(300);
+      let total = preco * qtd;
+
+      document.getElementById("qtd").innerHTML = qtd;
+      document.getElementById("desc").innerHTML = "Tenis Adidas";
+      document.getElementById("preco").innerHTML = total;
+
+   } else
+   {
+      document.getElementById("mensagem1").innerHTML = "Codigo inexistente!";
+   }
+   
+
+}
+
+
+
+
 
